@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/data/data/pl.sviete.dom/files/usr/bin/bash
 
 echo "Running libtoolize"
 libtoolize -c
@@ -9,9 +9,9 @@ fi
 
 # We use iconv directly rather than via gettext, so
 # we need to manually copy config.rpath.
-CONFIG_RPATH=/data/data/com.termux/files/usr/share/gettext/config.rpath
+CONFIG_RPATH=/data/data/pl.sviete.dom/files/usr/share/gettext/config.rpath
 if ! [ -f $CONFIG_RPATH ]; then
-    CONFIG_RPATH=/data/data/com.termux/files/usr/local/share/gettext/config.rpath
+    CONFIG_RPATH=/data/data/pl.sviete.dom/files/usr/local/share/gettext/config.rpath
 fi
 if ! [ -f $CONFIG_RPATH ]; then
     if  [ -f config.rpath ]; then
