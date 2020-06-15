@@ -1,4 +1,4 @@
-#!/data/data/pl.sviete.dom/files/usr/bin/bash
+#! /bin/sh
 
 echo "Running libtoolize"
 libtoolize -c
